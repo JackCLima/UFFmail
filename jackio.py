@@ -5,11 +5,11 @@ class Leitor:
     def __init__(self, caminho):
         self.caminho = caminho
 
-    def busca(self,matricula):
-        with open(self.caminho,"r") as csvfile:
+    def busca(self,atributo, posicao):
+        with open(self.caminho,'r') as csvfile:
             busca = csv.reader(csvfile)
             for line in busca:
-                if line[1] == matricula:
+                if line[posicao] == atributo:
                     csvfile.close
                     return line
         return []
