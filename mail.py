@@ -3,22 +3,17 @@
 class MotorMail:
     def __init__(self, nome, matricula):
         self.nome = nome
-        #self.status = True #ativo/Inativo
         self.matricula = matricula
         #self.mail = ""
-
+        #self.status = True #ativo/Inativo
 
     def solicitarEmail(self):
-
         generator = GeradorMail(self.nome)
         listOptions = generator.opcoes()
         return listOptions
 
-
     def criarEmail(self, caminho, email, matricula):
         pass
-
-
 
 '''
     @property
@@ -49,6 +44,7 @@ class MotorMail:
     def nome(self, nome):
         self.nome = nome
 '''
+
 class GeradorMail:
 
     def __init__(self, nome):
