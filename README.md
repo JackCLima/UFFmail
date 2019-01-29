@@ -15,3 +15,12 @@ Regras:
     Um aluno só pode ter um UFFMail
     Utilizar Orientação a Objetos para resolver o problema
     Livre escolha para a linguagem a ser utilizada
+
+
+COMO EXECUTAR NO UBUNTU:
+
+
+"caminho/do/arquivo"$ chmod +x uffmail.py
+"caminho/do/arquivo"$ ./uffmail.py 
+
+

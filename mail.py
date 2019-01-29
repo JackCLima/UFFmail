@@ -54,6 +54,14 @@ class GeradorMail:
     def opcoes(self):
         # acrescentar viabilidade para dois nomes ou mais de 3 nomes
         # implementar uma funcao que trabalhe sobre o len da namelist
+
+        '''
+        para a implementacao atual falta verificar a integridade
+        de do atributo nome uma vez que o split dele pode não haver
+        tres strings indexadas, todavia o modo implementado atualmente
+        funciona para o dataset modelo
+        '''
+
         namelist = self.nome.split()
         ops1 = namelist[0]+'_'+namelist[1]+self.mail
         ops2 = namelist[0]+namelist[1][0]+namelist[2][0]+self.mail
